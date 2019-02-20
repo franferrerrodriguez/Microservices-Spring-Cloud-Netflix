@@ -1,0 +1,69 @@
+# Application Config
+spring:
+     application:
+          name: zuul-api-gateway
+     cloud:
+          loadbalancer:
+               retry:
+                    enabled: true
+
+server:
+     port: 8082
+
+#cloud:
+      #config:
+           #uri: http://localhost:8888
+
+# Eureka Config
+eureka:
+     client:
+          service-url:
+               default-zone: http://localhost:8761/eureka
+
+# Zuul Mapping
+zuul:
+     retryable: true
+     routes:
+          ms-client-management:
+               path: /ms-client-management/**
+               serviceId: ms-client-management
+               stripPrefix: true
+
+#ribbon es el corte de llamadas (balanceadas) a otros micros 
+ribbon:
+     ConnectTimeout: 2000
+     ReadTimeout: 4000 # tiempo del reintento
+     MaxAutoRetries: 0 # en realidad se reintenta 6
+     MaxAutoRetriesNextServer: 0
+     
+ms-client-management:
+  ribbon:
+     ConnectTimeout: 2000
+     ReadTimeout: 2000
+     MaxAutoRetries: 5
+     MaxAutoRetriesNextServer: 0
+
+# hystrix es el corte de este micro, tiene que tener misma o más tiempo que ribbon
+# hystrix timeout = (ribbon.ConnectTimeout + ribbon.ReadTimeout) * (ribbon.MaxAutoRetries + 1) * (ribbon.MaxAutoRetriesNextServer + 1); 
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 567000
+
+# Max number of retries on the same server (excluding the first try)
+#sample-client.ribbon.MaxAutoRetries=1
+
+# Max number of next servers to retry (excluding the first server)
+#sample-client.ribbon.MaxAutoRetriesNextServer=1
+
+# Whether all operations can be retried for this client
+#sample-client.ribbon.OkToRetryOnAllOperations=true
+
+# Interval to refresh the server list from the source
+#sample-client.ribbon.ServerListRefreshInterval=2000
+
+# Connect timeout used by Apache HttpClient
+#sample-client.ribbon.ConnectTimeout=3000
+
+# Read timeout used by Apache HttpClient
+#sample-client.ribbon.ReadTimeout=3000
+
+# Initial list of servers, can be changed via Archaius dynamic property at runtime
+#sample-client.ribbon.listOfServers=www.microsoft.com:80,www.yahoo.com:80,www.google.com:80
