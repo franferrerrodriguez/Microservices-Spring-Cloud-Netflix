@@ -1,0 +1,800 @@
+project:
+  artifactId: zuul-server
+  name: zuul-server
+  version: 2.0.0
+  description: Zuul server for Orange
+info:
+  build:
+    artifactId: ${project.artifactId}
+    name: ${project.name}
+    version: ${project.version}
+    description: ${project.description}
+
+zuul:
+  add-proxy-headers: true
+  strip-prefix: true
+  retryable: true
+  trace-request-body: true
+  debug:
+    request: true
+  routes:
+    ms-activationandconfiguration_amena: /ms-activationandconfiguration/*v1/amena/*
+    ms-customermanagement_amena: /ms-customermanagement/*v1/amena/*
+    ms-productordering_amena: /ms-productordering/*v1/amena/*
+    ms-addressheavy: /ms-address/*v1/address
+    ms-communication-sendsms: /ms-communication/*v1/communications/sendSms**	
+    ms-productcatalogkratos_path1:
+      path: /ms-productcatalog/*v1/*v2*/**
+      serviceId: ms-productcatalogkratos
+    ms-productcatalogkratos_path2:
+      path: /ms-productcatalog/*v1/*/*v2*/**
+      serviceId: ms-productcatalogkratos
+    ms-logadounico:
+      path: /ms-logadounico/**
+      sensitiveHeaders: Authorization
+eureka:
+  client:
+    enabled: true
+    healthcheck:
+      enabled: true
+    use-dns-for-fetching-service-urls: false
+    registerWithEureka: true
+    fetchRegistry: true
+    initial-instance-info-replication-interval-seconds: 5
+    instance-info-replication-interval-seconds: 5
+  instance:
+    instanceId: ${localHostName}:${spring.application.name}:${server.port}
+    hostName: ${localHostName}
+    secure-port-enabled: true
+    non-secure-port-enabled: false
+    health-check-url: https://${localHostName}:${server.port}/health
+    status-page-url: https://${localHostName}:${server.port}/info
+    secure-port: ${server.port}
+    metadata-map:
+      instanceId: ${random.value}
+      spring-application-name: ${spring.application.instance_id:${random.value}}
+    app-group-name: microservicios
+    appname: ${project.name}
+
+server:
+  ssl:
+    enabled: true
+    key-store: /servicios/springboot/comun-config/certmicroservicespro.jks
+    key-password: test
+    key-store-password: test
+    key-alias: zuul.si.orange.es
+    trust-store: /servicios/springboot/comun-config/certmicroservicespro.jks
+    trust-store-password: test
+    key-store-type: jks
+  use-forward-headers: true
+  port: 9061
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+    access-log-enabled: true
+    access-log-directory: /servicios/springboot/logs/zuul/${spring.application.name}/
+    access-log-prefix: access-log-${spring.application.name}-${server.port}
+    #access-log-pattern: "[%{dd/MM/YYYY:HH:mm:ss.SSS}t]|%u|%U|%q|%{cookie}c|%{Z-TID}i|%s|%D|%{Referer}i|%b"
+    access-log-pattern: "[%{dd/MM/YYYY:HH:mm:ss.SSS}t]|%u|%U|%q|%{cookie}c|%{Z-TID}i|%{Z-LOGIN}i|%{Z-ROL}i|%{Z-LOGIN-TYPE}i|%{Z-DOCUMENT}i|%{Z-DOCUMENT-TYPE}i|%{Z-LINE-SELECTED}i|%{Z-SFID}i|%{Z-CALLER-IP}i|%{Z-CALLER-PORT}i|%{Z-PROCESS}i|%{Z-APP}i|%{Z-BRAND}i|%s|%D|%{Referer}i|%b"
+
+
+spring:
+  application:
+    name: ${project.name}
+logging:
+  
+#Situación de los logs
+  file: /servicios/springboot/logs/zuul/${project.name}/loggingzuulhttps.log
+  
+#Situación del archivo de logback para la configuración de la consola de administración
+  config: /servicios/springboot/zuul/${project.name}/logback.xml
+  level:
+    ROOT: INFO
+    org:
+      springframework:
+        web: INFO
+endpoints:
+  enabled: true
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    sensitive: false
+extra-routing:
+  header-name: z-sfid
+  mappings:
+    ms-stockdata:
+      Pangea: -jz
+    ms-productcatalog:
+      value1: -suffix-1
+      difValue: Another
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+
+ribbon:
+  eureka:
+    enabled: true
+  ConnectTimeout: 55000
+  ReadTimeout: 55000 
+  ServerListRefreshInterval: 2000
+
+#CONFIGURACION ESPECIFICA PARA CADA MICRO LLAMADO
+ms-agreement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 14000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-amortization:
+  ribbon:
+    ConnectTimeout: 30000
+    ReadTimeout: 30000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-amortizationcima:
+  ribbon:
+    ConnectTimeout: 30000
+    ReadTimeout: 30000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0   
+
+ms-bankaccount:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 22000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-customermanagement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-customermanagement_amena:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 24000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-detailedusage:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-documentmanagement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 10000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-expeditusage:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 8000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-xnetlineinformation:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-fixedinvoice:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-inflightfixedservices:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 10000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-multisimmanagement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 25000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-productordering:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 30000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-psp:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 9000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-simcard:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-activityregister:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-backoffice:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 7000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-campaignprints:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-changeoffer:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-comercialcampaing:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 9000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-productinventory:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 10000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-address:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-addressheavy:
+  ribbon:
+    ConnectTimeout: 3000
+    ReadTimeout: 15000
+    MaxAutoRetries: 1
+    MaxAutoRetriesNextServer: 0
+
+ms-scorecalidadtv:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 4000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-interaction:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 20000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-installationorders:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-devicecatalog:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-credential:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-eligibility:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-loyality:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 12000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-documentvalidator:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-notificationregister:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-frontutils:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-partymanagement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 11000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-resourceinventory:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-tibcoconnection:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 24000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0	
+
+ms-troubleticket:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 25000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-resourceordering:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 8000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-sapcatalog:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-sendemail:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-usermanagement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-inbox:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-mobileconnect:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-reportslist:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-stockdata:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-commercialbills:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-outportability:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 11000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-appointment:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-fixedservices:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 10000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-customerbillmanagement:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-inflightmobileservices:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-invitayahorra:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 4000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-activationandconfiguration:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 30000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-activationandconfiguration_amena:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 37000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-activationandconfigurationcima:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 24000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0	
+
+ms-productcatalog:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 10000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-productcatalogkratos:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 9000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-productordering_amena:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 77000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-productorderingcima:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 65000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-storelocator:
+  ribbon:
+    ConnectTimeout: 3000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-servicequalification:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+ms-productofferingqualification:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 9000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-bucketbalance:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+        
+ms-communication:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-customerview:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-discriminator:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-downloadbill:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 20000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-hoot:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-mdg:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 30000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-mdg-paegr:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 30000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0    
+    
+ 
+ms-shoppingcart:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 15000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0 
+ 
+  
+ms-terminalrepair:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 10000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-tokenbill:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 3000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+    
+ms-interactiveinvoice:
+  ribbon:
+    ConnectTimeout: 6000
+    ReadTimeout: 20000
+    MaxAutoRetries: 0
+    MaxAutoRetriesNextServer: 0
+
+hystrix:
+  command:
+    ms-agreement:
+      execution.isolation.thread.timeoutInMilliseconds: 14000
+    ms-amortization:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-amortizationcima:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-bankaccount:
+      execution.isolation.thread.timeoutInMilliseconds: 23000
+    ms-customermanagement:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-customermanagement_amena:
+      execution.isolation.thread.timeoutInMilliseconds: 24000
+    ms-detailedusage:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-documentmanagement:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-expeditusage:
+      execution.isolation.thread.timeoutInMilliseconds: 8000
+    ms-xnetlineinformation:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-fixedinvoice:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-inflightfixedservices:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-multisimmanagement:
+      execution.isolation.thread.timeoutInMilliseconds: 25000
+    ms-productordering:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-psp:
+      execution.isolation.thread.timeoutInMilliseconds: 9000
+    ms-simcard:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-activityregister:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-backoffice:
+      execution.isolation.thread.timeoutInMilliseconds: 7000
+    ms-campaignprints:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-changeoffer:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-comercialcampaing:
+      execution.isolation.thread.timeoutInMilliseconds: 9000
+    ms-productinventory:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-address:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-addressheavy:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-scorecalidadtv:
+      execution.isolation.thread.timeoutInMilliseconds: 4000
+    ms-interaction:
+      execution.isolation.thread.timeoutInMilliseconds: 20000
+    ms-installationorders:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-devicecatalog:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-credential:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-eligibility:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-loyality:
+      execution.isolation.thread.timeoutInMilliseconds: 12000
+    ms-documentvalidator:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-notificationregister:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-frontutils:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-partymanagement:
+      execution.isolation.thread.timeoutInMilliseconds: 11000
+    ms-resourceinventory:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-tibcoconnection:
+      execution.isolation.thread.timeoutInMilliseconds: 24000
+    ms-troubleticket:
+      execution.isolation.thread.timeoutInMilliseconds: 25000
+    ms-resourceordering:
+      execution.isolation.thread.timeoutInMilliseconds: 8000
+    ms-sapcatalog:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-sendemail:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-usermanagement:
+      execution.isolation.thread.timeoutInMilliseconds: 15000	  
+    ms-inbox:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-mobileconnect:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-reportslist:
+      execution.isolation.thread.timeoutInMilliseconds: 3000	  
+    ms-stockdata:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-commercialbills:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-outportability:
+      execution.isolation.thread.timeoutInMilliseconds: 11000
+    ms-appointment:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-fixedservices:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-customerbillmanagement:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-inflightmobileservices:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-invitayahorra:
+      execution.isolation.thread.timeoutInMilliseconds: 4000
+    ms-activationandconfiguration:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-activationandconfiguration_amena:
+      execution.isolation.thread.timeoutInMilliseconds: 37000
+    ms-activationandconfigurationcima:
+      execution.isolation.thread.timeoutInMilliseconds: 24000	  
+    ms-productcatalog:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-productcatalogkratos:
+      execution.isolation.thread.timeoutInMilliseconds: 12000
+    ms-productordering_amena:
+      execution.isolation.thread.timeoutInMilliseconds: 77000
+    ms-productorderingcima:
+      execution.isolation.thread.timeoutInMilliseconds: 65000		  
+    ms-storelocator:
+      execution.isolation.thread.timeoutInMilliseconds: 4000	
+    ms-servicequalification:
+      execution.isolation.thread.timeoutInMilliseconds: 16000
+    ms-productofferingqualification:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-bucketbalance:
+      execution.isolation.thread.timeoutInMilliseconds: 15000  
+    ms-communication:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-customerview:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-discriminator:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-downloadbill:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-hoot:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-mdg:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-mdg-paegr:
+      execution.isolation.thread.timeoutInMilliseconds: 30000
+    ms-shoppingcart:
+      execution.isolation.thread.timeoutInMilliseconds: 15000
+    ms-terminalrepair:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    ms-tokenbill:
+      execution.isolation.thread.timeoutInMilliseconds: 3000
+    ms-interactiveinvoice:
+      execution.isolation.thread.timeoutInMilliseconds: 20000

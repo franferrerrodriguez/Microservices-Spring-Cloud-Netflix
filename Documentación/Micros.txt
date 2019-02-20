@@ -1,0 +1,131 @@
+eureka server
+devtools
+actuator
+
+com.springboot.microservice.eureka.server
+spring-boot-microservice-forex-service
+
+
+
+
+
+
+
+
+create database exchange_value;
+use exchange_value;
+
+create table exchange_value(
+id int,
+currency_from varchar(255),
+currency_to varchar(255),
+conversion_multiple int,
+port int
+);
+
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple,port)
+values(10001,'USD','INR',65,0);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple,port)
+values(10002,'EUR','INR',75,0);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple,port)
+values(10003,'AUD','INR',25,0);
+
+-----------
+
+MS1:
+Forex Service - Abreviado como FS (ES UTILIZADO POR MS2)
+
+MS2:
+Currency Conversion Service - Abreviado como CCS (UTILIZA DE MS1)
+
+
+
+-------------
+Micro endpoint directo
+http://localhost:8000/id/1
+http://localhost:8000/all
+http://localhost:9999/currency-converter/from/EUR/to/INR/quantity/10000
+
+Client llama a micro con Feign
+/*http://localhost:9999/currency-converter-feign/from/EUR/to/INR/quantity/10000*/
+
+Zuul
+http://localhost:8082/client-management-service/id/1
+
+Hystrix
+localhost:8000/hystrix
+localhost:8000/actuator/hystrix.stream
+http://localhost:8000/hystrix/monitor?stream=http://localhost:8000/actuator/hystrix.stream
+
+Turbine
+localhost:8989/hystrix
+http://localhost:8989/turbine.stream
+http://localhost:8989/hystrix/monitor?stream=http://localhost:8989/turbine.stream
+-------------
+
+NOTAS IMPORTANTES:
+Orden de arranque:
+eureka server
+config server
+zuul
+micro (con hystrix y hystrix dashboard)
+turbine
+-------------
+Al arrancar el sistema, Zuul puede tardar unos segundos en reconocer los micros registrados en Eureka Server para empezar a mapear
+-------------
+Cuando importamos las dependencias de jpa y feign, salta un error al ejecutar el microservicio ya que ambas librerías tienen un Bean con el mismo nombre "dataSource".
+-------------
+Hay que activar todos los endpoints de actuator para que funcione "hystrix.stream" agregando
+la siguiente línea de código al application.properties: management.endpoints.web.exposure.include=*
+-------------
+Esto se corrige poniendo en nuestro archivo de configuración la siguiente línea: spring.main.allow-bean-definition-overriding=true
+-------------
+Cuando llamamos a la anotación @HystrixCommand(fallbackMethod = "XXXX"), necesitamos que el nombre del método XXXX, tenga el mismo tipo de respuesta y los mismos parámetros de entrada que su método original
+-------------
+Al ejecutar un test, muestra un mensaje de error como que no se ha cerrado la conexión
+Esto es porque en el application.properties debemos poner, aunque no esté establecia la conexión a una base de datos real todavía, pondremos esto:
+spring.datasource.url=
+(vacio)
+-------------
+Esta dependencia del POM genera conflicto de beans con la línea de application.properties: management.endpoints.web.exposure.include=*
+<properties>
+	<java.version>1.8</java.version>
+	<spring-cloud.version>Finchley.M8</spring-cloud.version>
+</properties>
+
+Sin embargo con esta no tenemos dicho problema
+<properties>
+	<java.version>1.8</java.version>
+	<spring-cloud.version>Greenwich.RC2</spring-cloud.version>
+</properties>
+------------
+Config server
+* En la ruta de configuración:
+spring.cloud.config.server.git.uri=
+Debemos establecer un repositorio git, remoto o local, pero git tiene que haber iniciado.
+Podemos realizar cambios en caliente de la configuración cuando se realiza el commit en local, o bien el push en remoto, aunque en el micro no se refresca, hay que reiniciarlo (no se si habrá forma de realizar un refresco).
+De todos modos esto sirve para tener toda la configuración centralizada en un repositorio.
+
+Se puede poner la uri=http://rutagithub
+O: /ruta absoluta/git
+
+* El fichero de configuración en el git remoto, se debe llamar acorde al:
+spring.application.name=client-management-service
+
+El fichero git remoto se debería llamar: client-management-service.properties
+
+Y se establecería la siguiente línea de código en el properties de la aplicación:
+# Application Config
+spring.application.name=client-management-service
+spring.cloud.config.uri=http://localhost:8888 <------ Apunta a micro spring-cloud-server
+
+
+------------
+HACER
+
+MIRAR SECURITY
+
+
+
+
+

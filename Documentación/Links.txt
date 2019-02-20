@@ -1,0 +1,8 @@
+https://start.spring.io/
+http://www.springboottutorial.com/creating-microservices-with-spring-boot-part-1-getting-started
+https://javabeginnerstutorial.com/spring-boot/spring-boot-2-microservices-with-netflix-zuul-api-gateway/
+https://www.youtube.com/watch?v=SxJ2uLZWOyw
+https://www.youtube.com/watch?v=A4f56RiuDdc
+https://www.baeldung.com/spring-cloud-configuration
+https://github.com/franferrerrodriguez/spring-cloud-config
+https://www.udemy.com/guia-completa-de-elk-stack-elasticsearch-logstash-kibana/
