@@ -1,0 +1,35 @@
+2019-01-18 20:21:30 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:21:31 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 1.384 seconds (JVM running for 63.33)
+2019-01-18 20:21:33 [hystrix-Controller-1] INFO  c.s.m.m.c.m.controller.Controller - (ms-client-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:21:34 [hystrix-Controller-2] INFO  c.s.m.m.c.m.controller.Controller - (ms-client-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:30:55 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:30:59 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 4.563 seconds (JVM running for 5.069)
+2019-01-18 20:31:13 [hystrix-Controller-1] INFO  c.s.m.m.c.m.controller.Controller - (ms-client-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:31:27 [hystrix-Controller-2] INFO  c.s.m.m.c.m.controller.Controller - (ms-client-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 21:02:38 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:02:42 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 4.121 seconds (JVM running for 4.62)
+2019-01-18 21:03:53 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:03:55 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 1.274 seconds (JVM running for 77.642)
+2019-01-18 21:04:04 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:04:07 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 4.1 seconds (JVM running for 4.591)
+2019-01-18 21:05:02 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:05:03 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 1.748 seconds (JVM running for 60.614)
+2019-01-18 21:05:19 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:05:38 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:06:01 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:06:06 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:06:23 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:06:28 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:08:39 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:09:32 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:11:17 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:11:33 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:12:20 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:12:23 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 4.172 seconds (JVM running for 4.68)
+2019-01-18 21:12:45 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:12:49 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 4.427 seconds (JVM running for 4.968)
+2019-01-18 21:13:14 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:13:18 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - Started MsClientManagementApplication in 4.123 seconds (JVM running for 4.615)
+2019-01-18 21:13:29 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:13:49 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default
+2019-01-18 21:15:06 [restartedMain] INFO  c.s.m.m.c.m.MsClientManagementApplication - No active profile set, falling back to default profiles: default

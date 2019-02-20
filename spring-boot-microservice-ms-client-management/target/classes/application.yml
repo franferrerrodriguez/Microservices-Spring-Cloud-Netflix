@@ -1,0 +1,23 @@
+# Application Config
+spring:
+     application:
+          name: ms-client-management
+          
+server:
+     port: 8001
+     
+management.endpoints.web.exposure.include: '*'
+
+# Eureka Config
+eureka:
+     client:
+          service-url:
+               default-zone: http://localhost:8761/eureka
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 100000
+
+ribbon:
+     ReadTimeout: 10000
+     ConnectTimeout: 10000
+     MaxAutoRetries: 0
+     MaxAutoRetriesNextServer: 0

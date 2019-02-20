@@ -1,0 +1,59 @@
+2019-01-18 20:12:56 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:12:57 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.594 seconds (JVM running for 149.39)
+2019-01-18 20:12:57 [restartedMain] ERROR c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Message logged at ERROR level
+2019-01-18 20:12:57 [restartedMain] WARN  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Message logged at WARN level
+2019-01-18 20:12:57 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Message logged at INFO level
+2019-01-18 20:13:57 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:13:58 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.449 seconds (JVM running for 210.728)
+2019-01-18 20:14:17 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:14:18 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.205 seconds (JVM running for 230.542)
+2019-01-18 20:14:38 [http-nio-8000-exec-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:14:39 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:15:03 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:15:05 [http-nio-8000-exec-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:15:07 [http-nio-8000-exec-6] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:09 [http-nio-8000-exec-9] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:28 [http-nio-8000-exec-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:29 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:30 [http-nio-8000-exec-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:30 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:31 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:32 [http-nio-8000-exec-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:54 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:16:57 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 4.352 seconds (JVM running for 4.86)
+2019-01-18 20:16:59 [http-nio-8000-exec-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:16:59 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:00 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:01 [http-nio-8000-exec-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:06 [http-nio-8000-exec-6] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:07 [http-nio-8000-exec-7] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:08 [http-nio-8000-exec-8] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:09 [http-nio-8000-exec-9] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:10 [http-nio-8000-exec-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:17:40 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:17:41 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.179 seconds (JVM running for 48.318)
+2019-01-18 20:19:27 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:19:29 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.578 seconds (JVM running for 156.155)
+2019-01-18 20:19:47 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:19:48 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:19:53 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:19:54 [http-nio-8000-exec-5] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:19:56 [http-nio-8000-exec-6] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:19:59 [http-nio-8000-exec-7] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:20:00 [http-nio-8000-exec-8] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:20:34 [http-nio-8000-exec-9] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:20:35 [http-nio-8000-exec-10] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:20:36 [http-nio-8000-exec-1] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:21:08 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:21:08 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:21:33 [http-nio-8000-exec-6] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:21:34 [http-nio-8000-exec-7] INFO  c.s.m.m.c.b.a.controller.Controller - (ms-customer-bank-management) - Se llama al endpoint XX y se registra en log.
+2019-01-18 20:27:05 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:27:07 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.837 seconds (JVM running for 614.034)
+2019-01-18 20:27:40 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:27:42 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.514 seconds (JVM running for 649.181)
+2019-01-18 20:27:51 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:27:52 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.069 seconds (JVM running for 659.75)
+2019-01-18 20:28:00 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:28:05 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-18 20:28:21 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default

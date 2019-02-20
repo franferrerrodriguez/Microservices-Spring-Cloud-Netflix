@@ -1,0 +1,197 @@
+2019-01-19 17:38:33 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:38:34 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.154 seconds (JVM running for 109.788)
+2019-01-19 17:38:36 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:38:49 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:38:50 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:38:51 [http-nio-8000-exec-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:50:59 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:51:03 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 4.453 seconds (JVM running for 5.176)
+2019-01-19 17:51:05 [http-nio-8000-exec-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:51:06 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:51:46 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:51:47 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.291 seconds (JVM running for 49.851)
+2019-01-19 17:52:05 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:52:06 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.145 seconds (JVM running for 68.617)
+2019-01-19 17:52:23 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:52:24 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.244 seconds (JVM running for 86.426)
+2019-01-19 17:52:31 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:52:32 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.054 seconds (JVM running for 94.057)
+2019-01-19 17:52:34 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:52:34 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 17:53:42 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:53:43 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.318 seconds (JVM running for 165.323)
+2019-01-19 17:54:04 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:54:05 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.092 seconds (JVM running for 187.046)
+2019-01-19 17:55:51 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:55:52 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.772 seconds (JVM running for 294.979)
+2019-01-19 17:57:33 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:57:34 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.62 seconds (JVM running for 396.894)
+2019-01-19 17:58:02 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:58:03 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.099 seconds (JVM running for 425.626)
+2019-01-19 17:58:39 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:58:40 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.165 seconds (JVM running for 462.645)
+2019-01-19 17:58:50 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 17:58:51 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.118 seconds (JVM running for 473.396)
+2019-01-19 18:01:12 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:01:13 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.633 seconds (JVM running for 615.648)
+2019-01-19 18:02:26 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:02:27 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.078 seconds (JVM running for 689.781)
+2019-01-19 18:02:29 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Se llama al endpoint: 'bankAccountsAll'
+2019-01-19 18:02:51 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:03:08 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:03:31 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:03:56 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:04:18 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:04:19 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.039 seconds (JVM running for 801.063)
+2019-01-19 18:04:26 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:04:27 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.117 seconds (JVM running for 809.876)
+2019-01-19 18:04:44 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:04:49 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 5.042 seconds (JVM running for 5.598)
+2019-01-19 18:04:49 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '{8000}'
+2019-01-19 18:04:50 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '{8000}'
+2019-01-19 18:05:06 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:05:07 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.158 seconds (JVM running for 23.958)
+2019-01-19 18:05:38 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:05:39 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.302 seconds (JVM running for 55.873)
+2019-01-19 18:06:02 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:06:03 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.101 seconds (JVM running for 79.593)
+2019-01-19 18:06:35 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:06:36 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.067 seconds (JVM running for 113.403)
+2019-01-19 18:06:48 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:06:49 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.235 seconds (JVM running for 126.164)
+2019-01-19 18:07:06 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:07:07 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.094 seconds (JVM running for 143.856)
+2019-01-19 18:07:31 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:07:32 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.166 seconds (JVM running for 168.632)
+2019-01-19 18:08:16 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:08:17 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.126 seconds (JVM running for 213.599)
+2019-01-19 18:08:28 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:08:29 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.156 seconds (JVM running for 226.333)
+2019-01-19 18:08:52 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:08:53 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.148 seconds (JVM running for 250.148)
+2019-01-19 18:09:00 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:09:01 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.071 seconds (JVM running for 257.823)
+2019-01-19 18:09:26 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:09:27 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.162 seconds (JVM running for 283.665)
+2019-01-19 18:09:31 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:09:32 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.107 seconds (JVM running for 289.283)
+2019-01-19 18:09:42 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 18:09:51 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsById' | Port: '8000'
+2019-01-19 18:09:56 [http-nio-8000-exec-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsById' | Port: '8000'
+2019-01-19 18:09:58 [http-nio-8000-exec-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsById' | Port: '8000'
+2019-01-19 18:19:58 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:20:02 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 5.082 seconds (JVM running for 5.654)
+2019-01-19 18:20:17 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsById' | Port: '8000'
+2019-01-19 18:20:19 [http-nio-8000-exec-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 18:31:44 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:31:46 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 2.136 seconds (JVM running for 708.905)
+2019-01-19 18:32:02 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:32:04 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.597 seconds (JVM running for 727.028)
+2019-01-19 18:32:53 [http-nio-8000-exec-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 18:33:38 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 18:33:40 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.826 seconds (JVM running for 823.214)
+2019-01-19 19:27:05 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:27:10 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 5.35 seconds (JVM running for 6.075)
+2019-01-19 19:29:31 [hystrix-Controller-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsById' | Port: '8000'
+2019-01-19 19:31:57 [hystrix-Controller-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsById' | Port: '8000'
+2019-01-19 19:32:00 [hystrix-Controller-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 19:33:41 [hystrix-Controller-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 19:33:47 [hystrix-Controller-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 19:35:15 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:35:16 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.271 seconds (JVM running for 491.934)
+2019-01-19 19:36:05 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:36:06 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.361 seconds (JVM running for 542.218)
+2019-01-19 19:36:09 [hystrix-Controller-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:36:10 [hystrix-Controller-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:36:45 [hystrix-Controller-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:37:29 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:37:30 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.117 seconds (JVM running for 625.796)
+2019-01-19 19:38:07 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:38:08 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.242 seconds (JVM running for 663.793)
+2019-01-19 19:38:23 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:38:24 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.064 seconds (JVM running for 680.424)
+2019-01-19 19:38:48 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:38:52 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 4.336 seconds (JVM running for 4.822)
+2019-01-19 19:38:55 [hystrix-Controller-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:39:21 [hystrix-Controller-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:39:26 [hystrix-Controller-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:39:46 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:39:47 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 1.192 seconds (JVM running for 59.46)
+2019-01-19 19:39:49 [hystrix-Controller-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:39:50 [hystrix-Controller-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:40:45 [hystrix-Controller-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 19:46:28 [hystrix-Controller-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:46:31 [hystrix-Controller-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 19:46:33 [hystrix-Controller-6] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:46:34 [hystrix-Controller-7] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:46:37 [hystrix-Controller-8] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:46:40 [hystrix-Controller-9] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 19:56:55 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 19:56:59 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 4.481 seconds (JVM running for 4.985)
+2019-01-19 20:16:03 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - No active profile set, falling back to default profiles: default
+2019-01-19 20:16:07 [restartedMain] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Started MsCustomerBankAccountsApplication in 4.786 seconds (JVM running for 5.381)
+2019-01-19 20:16:37 [hystrix-Controller-1] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:17:07 [hystrix-Controller-2] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:18:47 [hystrix-Controller-3] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:18:47 [hystrix-Controller-4] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:18:47 [hystrix-Controller-5] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:21:23 [hystrix-Controller-6] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:21:29 [hystrix-Controller-7] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:21:31 [hystrix-Controller-8] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:22:10 [hystrix-Controller-9] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:22:11 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:22:43 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:32:49 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:32:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:32:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:33:28 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:38:43 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:38:45 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:39:46 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:40:24 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:40:30 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:40:32 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:40:35 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:40:48 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:44:49 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:44:50 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:44:57 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:45:40 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:45:44 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:45:47 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsAll' | Port: '8000'
+2019-01-19 20:45:49 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:45:51 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:45:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:47:31 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:47:33 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:47:35 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:47:37 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:47:39 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:47:41 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:39 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:41 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:43 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:45 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:47 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:49 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:48:58 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:49:00 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:49:02 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:49:04 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:49:06 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:49:08 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:37 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:37 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:37 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:37 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:37 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:48 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:48 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:48 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:48 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:52:48 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:53:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:53:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:53:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:53:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
+2019-01-19 20:53:56 [hystrix-Controller-10] INFO  c.s.m.m.c.b.a.MsCustomerBankAccountsApplication - Called endpoint: 'bankAccountsByNif' | Port: '8000'
